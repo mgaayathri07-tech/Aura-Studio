@@ -1,0 +1,454 @@
+/* =================================
+   AURA STUDIO - HAIR CUT PAGE
+================================= */
+
+* {
+    box-sizing: border-box;
+}
+
+body {
+    margin: 0;
+    font-family: Arial, sans-serif;
+    color: #4d3b3e;
+}
+
+
+/* Header */
+
+.detail-header {
+    height: 80px;
+    padding: 0 8%;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    background: #fffaf7;
+    border-bottom: 1px solid #eadeda;
+}
+
+.detail-logo {
+    font-size: 26px;
+    font-weight: 600;
+    color: #8f6269;
+    text-decoration: none;
+}
+
+.detail-nav {
+    display: flex;
+    gap: 28px;
+}
+
+.detail-nav a {
+    color: #665255;
+    text-decoration: none;
+    font-size: 14px;
+}
+
+.detail-nav a:hover {
+    color: #a96f78;
+}
+
+
+/* Hero */
+
+.hair-hero {
+    min-height: 650px;
+    padding: 90px 8%;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background: #f4e8e4;
+}
+
+.hair-hero-content {
+    max-width: 700px;
+}
+
+.hair-hero-content > span {
+    font-size: 12px;
+    letter-spacing: 4px;
+    color: #a06c74;
+}
+
+.hair-hero h1 {
+    margin: 25px 0;
+    font-family: Georgia, serif;
+    font-size: clamp(55px, 8vw, 105px);
+    line-height: 0.95;
+    font-weight: 400;
+    color: #704d53;
+}
+
+.hair-hero p {
+    max-width: 600px;
+    color: #6f5d60;
+    font-size: 17px;
+    line-height: 1.8;
+}
+
+.hair-main-btn {
+    display: inline-block;
+    margin-top: 25px;
+    padding: 15px 28px;
+    background: #8f6269;
+    color: white;
+    text-decoration: none;
+    border-radius: 30px;
+}
+
+.hair-main-btn:hover {
+    background: #704d53;
+}
+
+.hair-hero-side {
+    text-align: center;
+}
+
+.hero-number {
+    font-family: Georgia, serif;
+    font-size: 180px;
+    color: rgba(143, 98, 105, 0.16);
+}
+
+.hair-hero-side p {
+    font-size: 11px;
+    letter-spacing: 4px;
+    color: #8f6269;
+}
+
+
+/* Intro */
+
+.hair-intro {
+    padding: 110px 15%;
+    text-align: center;
+    background: #fffaf7;
+}
+
+.hair-intro > span,
+.package-heading > span,
+.why-heading > span,
+.hair-cta > span {
+    font-size: 11px;
+    letter-spacing: 4px;
+    color: #a06c74;
+}
+
+.hair-intro h2 {
+    margin: 25px auto;
+    max-width: 850px;
+    font-family: Georgia, serif;
+    font-size: clamp(38px, 5vw, 65px);
+    line-height: 1.1;
+    font-weight: 400;
+    color: #704d53;
+}
+
+.hair-intro p {
+    max-width: 650px;
+    margin: auto;
+    color: #756568;
+    line-height: 1.9;
+}
+
+
+/* Packages */
+
+.hair-packages {
+    padding: 100px 8%;
+    background: #f8efeb;
+}
+
+.package-heading {
+    text-align: center;
+    margin-bottom: 60px;
+}
+
+.package-heading h2 {
+    margin: 18px 0;
+    font-family: Georgia, serif;
+    font-size: 55px;
+    font-weight: 400;
+    color: #704d53;
+}
+
+.package-heading p {
+    color: #756568;
+}
+
+
+/* Package list */
+
+.package-list {
+    max-width: 1150px;
+    margin: auto;
+}
+
+.hair-package {
+    position: relative;
+    display: grid;
+    grid-template-columns: 80px 1fr 150px 130px;
+    align-items: center;
+    gap: 30px;
+    padding: 35px 25px;
+    border-top: 1px solid #d9c6c1;
+    transition: 0.3s ease;
+}
+
+.hair-package:last-child {
+    border-bottom: 1px solid #d9c6c1;
+}
+
+.hair-package:hover {
+    padding-left: 40px;
+    background: #fffaf7;
+}
+
+.package-number {
+    font-family: Georgia, serif;
+    font-size: 28px;
+    color: #b0838a;
+}
+
+.package-info h3 {
+    margin: 0 0 10px;
+    font-family: Georgia, serif;
+    font-size: 27px;
+    font-weight: 400;
+    color: #704d53;
+}
+
+.package-info p {
+    max-width: 550px;
+    margin: 0;
+    color: #756568;
+    line-height: 1.6;
+}
+
+.package-details {
+    display: flex;
+    gap: 20px;
+    margin-top: 15px;
+}
+
+.package-details span {
+    font-size: 10px;
+    letter-spacing: 1.5px;
+    color: #9c737a;
+}
+
+.package-price {
+    text-align: center;
+}
+
+.package-price small {
+    display: block;
+    font-size: 9px;
+    letter-spacing: 2px;
+    color: #92777a;
+}
+
+.package-price strong {
+    display: block;
+    margin-top: 5px;
+    font-family: Georgia, serif;
+    font-size: 27px;
+    font-weight: 400;
+    color: #704d53;
+}
+
+.package-btn {
+    padding: 12px 18px;
+    border: 1px solid #9c737a;
+    border-radius: 25px;
+    color: #704d53;
+    text-align: center;
+    text-decoration: none;
+    font-size: 13px;
+    transition: 0.3s;
+}
+
+.package-btn:hover {
+    background: #8f6269;
+    color: white;
+}
+
+
+/* Featured */
+
+.featured-package {
+    background: #fffaf7;
+}
+
+.package-badge {
+    position: absolute;
+    top: 8px;
+    right: 25px;
+    font-size: 9px;
+    letter-spacing: 2px;
+    color: #a06c74;
+}
+
+
+/* Why Aura */
+
+.why-aura {
+    padding: 110px 8%;
+    background: #fffaf7;
+    display: grid;
+    grid-template-columns: 1fr 1.5fr;
+    gap: 80px;
+}
+
+.why-heading h2 {
+    margin-top: 20px;
+    font-family: Georgia, serif;
+    font-size: 55px;
+    line-height: 1.1;
+    font-weight: 400;
+    color: #704d53;
+}
+
+.why-grid {
+    display: grid;
+    gap: 35px;
+}
+
+.why-item {
+    border-bottom: 1px solid #dfd0cc;
+    padding-bottom: 25px;
+}
+
+.why-item span {
+    color: #b0838a;
+    font-size: 12px;
+    letter-spacing: 2px;
+}
+
+.why-item h3 {
+    color: #704d53;
+    font-family: Georgia, serif;
+    font-size: 23px;
+    font-weight: 400;
+}
+
+.why-item p {
+    color: #756568;
+}
+
+
+/* CTA */
+
+.hair-cta {
+    padding: 110px 20px;
+    text-align: center;
+    background: #704d53;
+    color: white;
+}
+
+.hair-cta > span {
+    color: #ead8d4;
+}
+
+.hair-cta h2 {
+    margin: 25px 0 35px;
+    font-family: Georgia, serif;
+    font-size: clamp(45px, 6vw, 75px);
+    line-height: 1;
+    font-weight: 400;
+}
+
+.hair-cta a {
+    display: inline-block;
+    padding: 14px 28px;
+    border: 1px solid #ead8d4;
+    border-radius: 30px;
+    color: white;
+    text-decoration: none;
+}
+
+.hair-cta a:hover {
+    background: white;
+    color: #704d53;
+}
+
+
+/* Footer */
+
+.detail-footer {
+    padding: 25px;
+    text-align: center;
+    background: #5d4146;
+    color: #ead8d4;
+    font-size: 13px;
+}
+
+
+/* Responsive */
+
+@media (max-width: 850px) {
+
+    .detail-header {
+        padding: 20px 6%;
+        height: auto;
+        flex-direction: column;
+        gap: 15px;
+    }
+
+    .detail-nav {
+        gap: 15px;
+        flex-wrap: wrap;
+        justify-content: center;
+    }
+
+    .hair-hero {
+        min-height: auto;
+        padding: 70px 8%;
+    }
+
+    .hair-hero-side {
+        display: none;
+    }
+
+    .hair-package {
+        grid-template-columns: 50px 1fr;
+        gap: 15px;
+    }
+
+    .package-price {
+        text-align: left;
+        grid-column: 2;
+    }
+
+    .package-btn {
+        width: fit-content;
+        grid-column: 2;
+    }
+
+    .why-aura {
+        grid-template-columns: 1fr;
+        gap: 40px;
+    }
+
+}
+
+@media (max-width: 600px) {
+
+    .hair-hero h1 {
+        font-size: 55px;
+    }
+
+    .hair-intro,
+    .hair-packages,
+    .why-aura {
+        padding: 70px 6%;
+    }
+
+    .package-heading h2 {
+        font-size: 42px;
+    }
+
+    .hair-package {
+        padding: 30px 10px;
+    }
+
+}

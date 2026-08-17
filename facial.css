@@ -1,0 +1,636 @@
+
+/* =========================================
+   AURA STUDIO
+   FACIAL RITUAL PAGE
+========================================= */
+
+* {
+    box-sizing: border-box;
+}
+
+body {
+    margin: 0;
+    font-family: Arial, sans-serif;
+    color: #4f4143;
+    background: #fffdfb;
+}
+
+
+/* =========================
+   HEADER
+========================= */
+
+.facial-header {
+    min-height: 82px;
+    padding: 0 7%;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    background: #fffdfb;
+    border-bottom: 1px solid #e8ded9;
+}
+
+.facial-logo {
+    font-family: Georgia, serif;
+    font-size: 27px;
+    color: #76585d;
+    text-decoration: none;
+}
+
+.facial-nav {
+    display: flex;
+    gap: 28px;
+}
+
+.facial-nav a {
+    color: #655759;
+    text-decoration: none;
+    font-size: 14px;
+}
+
+.facial-nav a:hover {
+    color: #9d7179;
+}
+
+
+/* =========================
+   HERO
+========================= */
+
+.facial-hero {
+    min-height: 680px;
+    padding: 80px 7%;
+    display: grid;
+    grid-template-columns: 1fr 0.9fr;
+    align-items: center;
+    gap: 80px;
+    background: #f7eee9;
+    overflow: hidden;
+}
+
+.facial-hero-content {
+    max-width: 650px;
+}
+
+.facial-label {
+    color: #9c7077;
+    font-size: 11px;
+    letter-spacing: 4px;
+}
+
+.facial-hero h1 {
+    margin: 28px 0;
+    font-family: Georgia, serif;
+    font-size: clamp(58px, 7vw, 105px);
+    line-height: 0.94;
+    font-weight: 400;
+    color: #685052;
+}
+
+.facial-hero h1 em {
+    color: #a77a81;
+    font-weight: 400;
+}
+
+.facial-hero p {
+    max-width: 520px;
+    color: #756568;
+    line-height: 1.9;
+    font-size: 16px;
+}
+
+.facial-main-btn {
+    display: inline-block;
+    margin-top: 25px;
+    padding: 15px 28px;
+    border-radius: 30px;
+    background: #866169;
+    color: white;
+    text-decoration: none;
+}
+
+
+/* Hero Visual */
+
+.facial-hero-visual {
+    position: relative;
+    height: 570px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.hero-circle {
+    width: 270px;
+    height: 270px;
+    border-radius: 50%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background: #ddc2bb;
+    color: #866169;
+    font-family: Georgia, serif;
+    font-size: 45px;
+    letter-spacing: 8px;
+}
+
+.hero-orbit {
+    position: absolute;
+    border: 1px solid #c7aaa4;
+    border-radius: 50%;
+}
+
+.orbit-one {
+    width: 370px;
+    height: 370px;
+}
+
+.orbit-two {
+    width: 470px;
+    height: 470px;
+    border-color: #dec9c4;
+}
+
+.hero-number {
+    position: absolute;
+    right: 0;
+    bottom: 10px;
+    font-family: Georgia, serif;
+    font-size: 150px;
+    color: rgba(134, 97, 105, 0.13);
+}
+
+
+/* =========================
+   PHILOSOPHY
+========================= */
+
+.skin-philosophy {
+    padding: 120px 10%;
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 100px;
+    background: #fffdfb;
+}
+
+.philosophy-title span,
+.philosophy-text span {
+    color: #9c7077;
+}
+
+.philosophy-title > span {
+    font-size: 11px;
+    letter-spacing: 3px;
+}
+
+.philosophy-title h2 {
+    margin-top: 22px;
+    font-family: Georgia, serif;
+    font-size: clamp(45px, 5vw, 70px);
+    line-height: 1.05;
+    font-weight: 400;
+    color: #685052;
+}
+
+.philosophy-text {
+    padding-top: 45px;
+}
+
+.philosophy-text p {
+    max-width: 560px;
+    color: #756568;
+    line-height: 1.9;
+    font-size: 17px;
+}
+
+.skin-tags {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 10px;
+    margin-top: 35px;
+}
+
+.skin-tags span {
+    padding: 9px 15px;
+    border: 1px solid #d9c5c0;
+    border-radius: 30px;
+    color: #866169;
+    font-size: 10px;
+    letter-spacing: 2px;
+}
+
+
+/* =========================
+   FACIAL MENU
+========================= */
+
+.facial-menu {
+    padding: 120px 7%;
+    background: #f2e5e1;
+}
+
+.menu-heading {
+    max-width: 700px;
+    margin-bottom: 65px;
+}
+
+.menu-heading span {
+    color: #9c7077;
+    font-size: 11px;
+    letter-spacing: 3px;
+}
+
+.menu-heading h2 {
+    margin: 20px 0 0;
+    font-family: Georgia, serif;
+    font-size: clamp(48px, 6vw, 75px);
+    line-height: 1;
+    font-weight: 400;
+    color: #685052;
+}
+
+
+/* Treatment */
+
+.treatment {
+    display: grid;
+    grid-template-columns: 70px 1fr 140px 100px;
+    gap: 30px;
+    align-items: center;
+    padding: 35px 20px;
+    border-top: 1px solid #d5c0ba;
+    transition: 0.3s ease;
+}
+
+.treatment:last-child {
+    border-bottom: 1px solid #d5c0ba;
+}
+
+.treatment:hover {
+    padding-left: 35px;
+    background: #fffdfb;
+}
+
+.treatment.highlighted {
+    background: #fffdfb;
+}
+
+.treatment-index {
+    font-family: Georgia, serif;
+    font-size: 25px;
+    color: #a77a81;
+}
+
+.treatment-main h3 {
+    margin: 0 0 12px;
+    font-family: Georgia, serif;
+    font-size: 29px;
+    font-weight: 400;
+    color: #685052;
+}
+
+.treatment-main p {
+    max-width: 620px;
+    margin: 0;
+    color: #756568;
+    line-height: 1.7;
+}
+
+.treatment-meta {
+    display: flex;
+    gap: 20px;
+    margin-top: 15px;
+}
+
+.treatment-meta span {
+    font-size: 9px;
+    letter-spacing: 1.5px;
+    color: #997278;
+}
+
+.treatment-price {
+    font-family: Georgia, serif;
+    font-size: 26px;
+    color: #685052;
+}
+
+.treatment-link {
+    padding: 11px 15px;
+    border: 1px solid #a77a81;
+    border-radius: 25px;
+    text-align: center;
+    text-decoration: none;
+    color: #685052;
+    font-size: 13px;
+}
+
+.treatment-link:hover {
+    background: #866169;
+    color: white;
+}
+
+.treatment-badge {
+    display: inline-block;
+    margin-bottom: 8px;
+    color: #9c7077;
+    font-size: 9px;
+    letter-spacing: 2px;
+}
+
+
+/* =========================
+   SKIN JOURNEY
+========================= */
+
+.skin-journey {
+    padding: 120px 7%;
+    background: #fffdfb;
+}
+
+.journey-intro {
+    max-width: 650px;
+}
+
+.journey-intro > span {
+    color: #9c7077;
+    font-size: 11px;
+    letter-spacing: 3px;
+}
+
+.journey-intro h2 {
+    margin: 22px 0;
+    font-family: Georgia, serif;
+    font-size: clamp(48px, 6vw, 75px);
+    line-height: 1;
+    font-weight: 400;
+    color: #685052;
+}
+
+.journey-intro p {
+    max-width: 560px;
+    color: #756568;
+    line-height: 1.8;
+}
+
+.journey-flow {
+    margin-top: 80px;
+    display: flex;
+    align-items: center;
+}
+
+.flow-step {
+    flex: 1;
+}
+
+.flow-step strong {
+    color: #a77a81;
+    font-family: Georgia, serif;
+    font-size: 24px;
+}
+
+.flow-step h3 {
+    margin: 18px 0 8px;
+    font-family: Georgia, serif;
+    font-size: 25px;
+    font-weight: 400;
+    color: #685052;
+}
+
+.flow-step p {
+    color: #756568;
+    line-height: 1.6;
+    max-width: 180px;
+}
+
+.flow-line {
+    width: 60px;
+    height: 1px;
+    background: #d8c5c0;
+}
+
+
+/* =========================
+   SKIN NOTES
+========================= */
+
+.skin-notes {
+    padding: 0 7% 120px;
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 20px;
+    background: #fffdfb;
+}
+
+.notes-card {
+    min-height: 370px;
+    padding: 40px 30px;
+    background: #f3e6e2;
+}
+
+.notes-card > span {
+    color: #9c7077;
+    font-size: 10px;
+    letter-spacing: 2px;
+}
+
+.notes-card h3 {
+    margin: 80px 0 20px;
+    font-family: Georgia, serif;
+    font-size: 31px;
+    line-height: 1.1;
+    font-weight: 400;
+    color: #685052;
+}
+
+.notes-card p {
+    color: #756568;
+    line-height: 1.7;
+}
+
+.notes-card.dark-note {
+    background: #685052;
+}
+
+.dark-note > span {
+    color: #e7cfd0;
+}
+
+.dark-note h3,
+.dark-note p {
+    color: white;
+}
+
+.dark-note p {
+    color: #eadbdd;
+}
+
+
+/* =========================
+   CTA
+========================= */
+
+.facial-cta {
+    padding: 120px 20px;
+    text-align: center;
+    background: #866169;
+    color: white;
+}
+
+.facial-cta > span {
+    color: #ead7d9;
+    font-size: 11px;
+    letter-spacing: 3px;
+}
+
+.facial-cta h2 {
+    margin: 25px 0 35px;
+    font-family: Georgia, serif;
+    font-size: clamp(48px, 7vw, 85px);
+    line-height: 0.98;
+    font-weight: 400;
+}
+
+.facial-cta a {
+    display: inline-block;
+    padding: 15px 28px;
+    border: 1px solid #ead7d9;
+    border-radius: 30px;
+    color: white;
+    text-decoration: none;
+}
+
+.facial-cta a:hover {
+    background: white;
+    color: #685052;
+}
+
+
+/* =========================
+   FOOTER
+========================= */
+
+.facial-footer {
+    padding: 25px;
+    text-align: center;
+    background: #574246;
+    color: #ead7d9;
+    font-size: 13px;
+}
+
+
+/* =========================
+   RESPONSIVE
+========================= */
+
+@media (max-width: 950px) {
+
+    .facial-hero {
+        grid-template-columns: 1fr;
+    }
+
+    .facial-hero-visual {
+        height: 480px;
+    }
+
+    .skin-philosophy {
+        grid-template-columns: 1fr;
+        gap: 30px;
+    }
+
+    .philosophy-text {
+        padding-top: 0;
+    }
+
+
+    .treatment {
+        grid-template-columns: 50px 1fr;
+    }
+
+    .treatment-price {
+        grid-column: 2;
+    }
+
+    .treatment-link {
+        grid-column: 2;
+        width: fit-content;
+    }
+
+    .journey-flow {
+        flex-wrap: wrap;
+        gap: 30px;
+    }
+
+    .flow-line {
+        display: none;
+    }
+
+}
+
+
+@media (max-width: 650px) {
+
+    .facial-header {
+        padding: 20px 6%;
+        flex-direction: column;
+        gap: 18px;
+    }
+
+    .facial-nav {
+        gap: 15px;
+        flex-wrap: wrap;
+        justify-content: center;
+    }
+
+    .facial-hero {
+        padding: 60px 6%;
+    }
+
+    .facial-hero h1 {
+        font-size: 58px;
+    }
+
+    .facial-hero-visual {
+        height: 400px;
+    }
+
+    .hero-circle {
+        width: 260px;
+        height: 260px;
+    }
+
+    .orbit-one {
+        width: 330px;
+        height: 330px;
+    }
+
+    .orbit-two {
+        width: 400px;
+        height: 400px;
+    }
+
+    .hero-number {
+        font-size: 100px;
+    }
+
+    .skin-philosophy,
+    .facial-menu,
+    .skin-journey {
+        padding: 75px 6%;
+    }
+
+    .skin-notes {
+        padding: 0 6% 75px;
+        grid-template-columns: 1fr;
+    }
+
+    .treatment {
+        padding: 30px 10px;
+    }
+
+    .journey-flow {
+        display: grid;
+        grid-template-columns: 1fr 1fr;
+    }
+
+}
+```

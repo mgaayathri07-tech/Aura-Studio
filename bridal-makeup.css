@@ -1,0 +1,669 @@
+
+/* =========================================
+   AURA STUDIO
+   BRIDAL MAKEUP PAGE
+========================================= */
+
+* {
+    box-sizing: border-box;
+}
+
+body {
+    margin: 0;
+    font-family: Arial, sans-serif;
+    color: #4f3b3f;
+    background: #fffaf7;
+}
+
+
+/* =========================
+   HEADER
+========================= */
+
+.bridal-header {
+    min-height: 82px;
+    padding: 0 7%;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    background: #fffaf7;
+    border-bottom: 1px solid #eadeda;
+}
+
+.bridal-logo {
+    color: #825961;
+    text-decoration: none;
+    font-family: Georgia, serif;
+    font-size: 27px;
+}
+
+.bridal-nav {
+    display: flex;
+    gap: 28px;
+}
+
+.bridal-nav a {
+    color: #665255;
+    text-decoration: none;
+    font-size: 14px;
+}
+
+.bridal-nav a:hover {
+    color: #a46e77;
+}
+
+
+/* =========================
+   HERO
+========================= */
+
+.bridal-hero {
+    min-height: 700px;
+    padding: 70px 7%;
+    display: grid;
+    grid-template-columns: 0.95fr 1.05fr;
+    gap: 70px;
+    align-items: center;
+    background: #f2e5e1;
+}
+
+.bridal-hero-image {
+    height: 800px;
+    overflow: hidden;
+}
+
+.bridal-hero-image img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    display: block;
+}
+
+.bridal-hero-content {
+    max-width: 620px;
+}
+
+.eyebrow {
+    color: #9d6d75;
+    font-size: 11px;
+    letter-spacing: 4px;
+}
+
+.bridal-hero h1 {
+    margin: 28px 0;
+    font-family: Georgia, serif;
+    font-size: clamp(58px, 7vw, 105px);
+    line-height: 0.94;
+    font-weight: 400;
+    color: #704d53;
+}
+
+.bridal-hero h1 em {
+    color: #a06b75;
+    font-weight: 400;
+}
+
+.bridal-hero-content p {
+    max-width: 560px;
+    color: #705e61;
+    line-height: 1.9;
+    font-size: 16px;
+}
+
+.bridal-primary-btn {
+    display: inline-block;
+    margin-top: 25px;
+    padding: 15px 28px;
+    background: #8d6068;
+    color: #ffffff;
+    text-decoration: none;
+    border-radius: 30px;
+}
+
+.bridal-primary-btn:hover {
+    background: #704d53;
+}
+
+
+/* =========================
+   STATEMENT
+========================= */
+
+.bridal-statement {
+    padding: 120px 12%;
+    display: grid;
+    grid-template-columns: 0.7fr 1.3fr;
+    gap: 80px;
+    background: #fffaf7;
+}
+
+.statement-small {
+    padding-top: 12px;
+    color: #a06c74;
+    font-size: 11px;
+    letter-spacing: 3px;
+}
+
+.statement-content h2 {
+    margin: 0 0 30px;
+    font-family: Georgia, serif;
+    font-size: clamp(42px, 5vw, 68px);
+    line-height: 1.08;
+    font-weight: 400;
+    color: #704d53;
+}
+
+.statement-content p {
+    max-width: 650px;
+    color: #756568;
+    line-height: 1.9;
+}
+
+
+/* =========================
+   STORY
+========================= */
+
+.bridal-story {
+    padding: 100px 7%;
+    display: grid;
+    grid-template-columns: 1.05fr 0.95fr;
+    gap: 80px;
+    align-items: center;
+    background: #f7eeeb;
+}
+
+.large-image {
+    height: 650px;
+    overflow: hidden;
+}
+
+.story-image img {
+    width: 100%;
+    height: 111%;
+    object-fit: cover;
+    display: block;
+}
+
+.story-content > span {
+    color: #a06c74;
+    font-size: 11px;
+    letter-spacing: 3px;
+}
+
+.story-content h2 {
+    margin: 25px 0;
+    font-family: Georgia, serif;
+    font-size: clamp(48px, 6vw, 78px);
+    line-height: 0.98;
+    font-weight: 400;
+    color: #704d53;
+}
+
+.story-content > p {
+    max-width: 500px;
+    color: #756568;
+    line-height: 1.8;
+}
+
+.story-points {
+    margin-top: 40px;
+}
+
+.story-points div {
+    display: flex;
+    gap: 20px;
+    padding: 16px 0;
+    border-bottom: 1px solid #d9c7c2;
+}
+
+.story-points strong {
+    color: #a06c74;
+    font-size: 12px;
+}
+
+.story-points span {
+    color: #665255;
+}
+
+
+/* =========================
+   PACKAGES
+========================= */
+
+.bridal-packages {
+    padding: 120px 7%;
+    background: #fffaf7;
+}
+
+.package-intro {
+    max-width: 720px;
+    margin-bottom: 65px;
+}
+
+.package-intro > span {
+    color: #a06c74;
+    font-size: 11px;
+    letter-spacing: 3px;
+}
+
+.package-intro h2 {
+    margin: 20px 0;
+    font-family: Georgia, serif;
+    font-size: clamp(45px, 5vw, 70px);
+    line-height: 1.05;
+    font-weight: 400;
+    color: #704d53;
+}
+
+.package-intro p {
+    max-width: 580px;
+    color: #756568;
+    line-height: 1.8;
+}
+
+.bridal-package-grid {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 22px;
+}
+
+.bridal-card {
+    position: relative;
+    padding: 38px 30px;
+    min-height: 500px;
+    display: flex;
+    flex-direction: column;
+    background: #f5e9e5;
+    border: 1px solid #e4d3ce;
+    transition: 0.3s ease;
+}
+
+.bridal-card:hover {
+    transform: translateY(-8px);
+}
+
+.bridal-card.featured {
+    background: #704d53;
+    color: #ffffff;
+    transform: translateY(-18px);
+}
+
+.bridal-card.featured:hover {
+    transform: translateY(-25px);
+}
+
+.popular-label {
+    position: absolute;
+    top: 18px;
+    right: 20px;
+    font-size: 9px;
+    letter-spacing: 2px;
+    color: #ead8d4;
+}
+
+.card-top {
+    display: flex;
+    justify-content: space-between;
+    color: #a06c74;
+    font-size: 10px;
+    letter-spacing: 2px;
+}
+
+.featured .card-top {
+    color: #e7cdd0;
+}
+
+.bridal-card h3 {
+    margin: 60px 0 15px;
+    font-family: Georgia, serif;
+    font-size: 31px;
+    font-weight: 400;
+    color: #704d53;
+}
+
+.featured h3 {
+    color: #ffffff;
+}
+
+.bridal-card > p {
+    color: #756568;
+    line-height: 1.7;
+}
+
+.featured > p {
+    color: #eadbdd;
+}
+
+.bridal-card ul {
+    padding: 0;
+    margin: 25px 0;
+    list-style: none;
+}
+
+.bridal-card li {
+    padding: 9px 0;
+    border-bottom: 1px solid #dfccc7;
+    color: #665255;
+    font-size: 14px;
+}
+
+.featured li {
+    border-color: rgba(255,255,255,0.2);
+    color: #f3e5e6;
+}
+
+.card-bottom {
+    margin-top: auto;
+    display: flex;
+    align-items: end;
+    justify-content: space-between;
+    gap: 10px;
+}
+
+.card-bottom strong {
+    font-family: Georgia, serif;
+    font-size: 30px;
+    font-weight: 400;
+    color: #704d53;
+}
+
+.featured .card-bottom strong {
+    color: #ffffff;
+}
+
+.card-bottom span {
+    font-size: 10px;
+    color: #92777a;
+}
+
+.featured .card-bottom span {
+    color: #d9c1c5;
+}
+
+.bridal-card > a {
+    display: inline-block;
+    margin-top: 25px;
+    padding: 13px 18px;
+    border: 1px solid #a06c74;
+    color: #704d53;
+    text-decoration: none;
+    text-align: center;
+    border-radius: 30px;
+    font-size: 13px;
+}
+
+.bridal-card > a:hover {
+    background: #8d6068;
+    color: #ffffff;
+}
+
+.featured > a {
+    border-color: #ead8d4;
+    color: #ffffff;
+}
+
+
+/* =========================
+   PREPARATION
+========================= */
+
+.bridal-prep {
+    padding: 100px 7%;
+    display: grid;
+    grid-template-columns: 1fr 0.85fr;
+    gap: 80px;
+    align-items: center;
+    background: #f2e5e1;
+}
+
+.prep-content {
+    max-width: 600px;
+}
+
+.prep-content > span {
+    color: #a06c74;
+    font-size: 11px;
+    letter-spacing: 3px;
+}
+
+.prep-content h2 {
+    margin: 25px 0;
+    font-family: Georgia, serif;
+    font-size: clamp(45px, 5vw, 68px);
+    line-height: 1.05;
+    font-weight: 400;
+    color: #704d53;
+}
+
+.prep-content p {
+    color: #756568;
+    line-height: 1.8;
+}
+
+.prep-content a {
+    display: inline-block;
+    margin-top: 25px;
+    color: #704d53;
+    text-decoration: none;
+    border-bottom: 1px solid #704d53;
+    padding-bottom: 5px;
+}
+
+.prep-image {
+    height: 520px;
+    overflow: hidden;
+}
+
+.prep-image img {
+    width: 90%;
+    height: 100%;
+    object-fit: cover;
+}
+
+
+/* =========================
+   JOURNEY
+========================= */
+
+.bridal-journey {
+    padding: 120px 7%;
+    background: #fffaf7;
+}
+
+.journey-heading {
+    text-align: center;
+    margin-bottom: 70px;
+}
+
+.journey-heading > span {
+    color: #a06c74;
+    font-size: 11px;
+    letter-spacing: 3px;
+}
+
+.journey-heading h2 {
+    margin: 20px 0 0;
+    font-family: Georgia, serif;
+    font-size: clamp(43px, 5vw, 65px);
+    line-height: 1.05;
+    font-weight: 400;
+    color: #704d53;
+}
+
+.journey-steps {
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    gap: 25px;
+}
+
+.journey-step {
+    padding: 30px 20px;
+    border-top: 1px solid #d9c7c2;
+}
+
+.journey-step > span {
+    color: #a06c74;
+    font-size: 12px;
+    letter-spacing: 2px;
+}
+
+.journey-step h3 {
+    margin: 25px 0 12px;
+    font-family: Georgia, serif;
+    font-size: 25px;
+    font-weight: 400;
+    color: #704d53;
+}
+
+.journey-step p {
+    color: #756568;
+    line-height: 1.7;
+}
+
+
+/* =========================
+   CTA
+========================= */
+
+.bridal-cta {
+    padding: 120px 20px;
+    text-align: center;
+    background: #704d53;
+    color: #ffffff;
+}
+
+.bridal-cta > span {
+    color: #e9d5d7;
+    font-size: 11px;
+    letter-spacing: 3px;
+}
+
+.bridal-cta h2 {
+    margin: 25px 0 35px;
+    font-family: Georgia, serif;
+    font-size: clamp(48px, 7vw, 85px);
+    line-height: 0.98;
+    font-weight: 400;
+}
+
+.bridal-cta a {
+    display: inline-block;
+    padding: 15px 28px;
+    border: 1px solid #ead8d4;
+    border-radius: 30px;
+    color: #ffffff;
+    text-decoration: none;
+}
+
+.bridal-cta a:hover {
+    background: #ffffff;
+    color: #704d53;
+}
+
+
+/* =========================
+   FOOTER
+========================= */
+
+.bridal-footer {
+    padding: 25px;
+    text-align: center;
+    background: #5d4146;
+    color: #ead8d4;
+    font-size: 13px;
+}
+
+
+/* =========================
+   RESPONSIVE
+========================= */
+
+@media (max-width: 950px) {
+
+    .bridal-hero {
+        grid-template-columns: 1fr;
+    }
+
+    .bridal-hero-image {
+        height: 500px;
+    }
+
+    .bridal-statement {
+        grid-template-columns: 1fr;
+        gap: 30px;
+    }
+
+    .bridal-story {
+        grid-template-columns: 1fr;
+    }
+
+    .bridal-package-grid {
+        grid-template-columns: 1fr;
+    }
+
+    .bridal-card.featured {
+        transform: none;
+    }
+
+    .bridal-prep {
+        grid-template-columns: 1fr;
+    }
+
+    .journey-steps {
+        grid-template-columns: repeat(2, 1fr);
+    }
+
+}
+
+
+@media (max-width: 650px) {
+
+    .bridal-header {
+        padding: 20px 6%;
+        flex-direction: column;
+        gap: 18px;
+    }
+
+    .bridal-nav {
+        gap: 15px;
+        flex-wrap: wrap;
+        justify-content: center;
+    }
+
+    .bridal-hero {
+        padding: 40px 6% 70px;
+        gap: 40px;
+    }
+
+    .bridal-hero-image {
+        height: 430px;
+    }
+
+    .bridal-hero h1 {
+        font-size: 58px;
+    }
+
+    .bridal-statement,
+    .bridal-story,
+    .bridal-packages,
+    .bridal-prep,
+    .bridal-journey {
+        padding: 75px 6%;
+    }
+
+    .large-image,
+    .prep-image {
+        height: 420px;
+    }
+
+    .journey-steps {
+        grid-template-columns: 1fr;
+    }
+
+    .bridal-card {
+        min-height: auto;
+    }
+
+}
+```
